@@ -11,7 +11,7 @@ MAX_CHARS = 24
 
 
 def main() -> None:
-    # Validate the entry format before writing anything.
+    # Check the first thought stays exactly one word and within the limit before writing it.
     assert "\n" not in ENTRY, "entry must be a single line"
     assert len(ENTRY.split()) == 1, "entry must be exactly one word"
     assert ENTRY.strip(), "entry must not be blank"
